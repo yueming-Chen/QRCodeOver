@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+*{
+	box-sizing: border-box;
+	font-family: 'cwTeXHei', sans-serif;
+}
+
+html, body {
+	margin:0;padding:0;height:100%;
+	background: #D1CFBA;
+}
+
+.btn{
+	box-shadow:2px 3px 1px rgba(20%,20%,40%,0.1);
+}
+
+.btn-default{
+	background: #CCD1CD;
+	border-radius: 0;
+}
+
+.btn-fb{
+	background: #5587B2;
+	border-radius: 0;
+	color: white;
+}
+
+.btn-tw{
+	background: #75B9F4;
+	border-radius: 0;
+	color: white;
+}
+
+.btn-go{
+	background: #D56F3E;
+	border-radius: 0;
+	color: white;
+}
+
+
+@media screen and (max-width: 668px) {
+    .title{
+    	text-align: center;
+    	padding-top: 30px;
+    	padding-bottom: 10px;
+    	height: 14%;
+    	background: #4A949B;
+    }
+
+    .title .active{
+    	color: white;
+    }
+
+    .title .item{
+    	padding-top: 5px;
+
+    }
+
+    .title .item p{
+    	font-size: 13px;
+    }
+
+    .r-line{
+    	border-right: 1px solid rgba(0,0,0,0.5);
+    }
+
+    .information{
+    	background: white;
+    	margin-top: 10px;
+    	line-height: 19.8px;
+    	text-align: justify;
+    	padding-bottom: 15px;
+    }
+
+    .information .info-header{
+    	padding-bottom: 4px;
+    	border-bottom: 1px solid rgba(0,0,0,0.4);
+    }
+
+    .icon{
+    	margin-top: 5px;
+    	width: 40px;
+    	height: 40px;
+		-webkit-filter:invert(50%);
+  			filter:invert(50%);
+    }
+
+    .center{
+    	text-align: center;
+    }
+
+    /*login*/
+
+    .form{
+    	background: white;
+    	margin-top: 20px;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+
+    }
+
+    .form .form-input{
+    	float: left;
+    	padding: 0;
+    	padding-left: 20px;
+    	padding-top: 2px;
+    	padding-bottom: 2px;
+    	margin-bottom: 24px;
+    }
+
+    .form input{
+
+    	border:0;
+    	background: none;
+    }
+
+    .form .sub-title{
+    	padding-right: 0;
+    	margin-bottom: 24px;
+    }
+
+    .form .sub-title h3{
+    	margin: 0;
+    	text-align: right;
+    	padding-right: 15px;
+    	border-right: 1px solid rgba(0,0,0,0.4);
+    }
+
+    .social{
+    	margin-top: 20px;
+    }
+    /*manage*/
+    .slide-bar{
+        background: #3B878E;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid #3B878E;
+        border-bottom: 3px solid white;
+        color: white;
+    }
+
+    .non-active{
+        border-bottom: 0;
+        color: black
+    }
+
+    .list{
+        padding: 0;
+        margin: 0;
+    }
+
+    .list .list-item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+    }
+
+    .list img{
+        height:40px;
+        width: 40px;
+    }
+
+    .list .list-title,.list .list-sub-title,.list .list-desc{
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+         white-space: nowrap;
+    }
+
+}

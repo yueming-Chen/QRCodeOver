@@ -1,0 +1,18 @@
+<header class="col-xs-6 slide-bar center">紀錄</header>
+<header class="col-xs-6 slide-bar center non-active">聊天室</header>
+<section class="col-xs-12 list" ng-repeat="item in list">
+	<div class=" col-xs-12 list-item">
+		<figure class="col-xs-2">
+			<img  src="./img/logo.png">
+		</figure>
+		<div class="col-xs-8">
+			<p class="list-title" ng-bind="item"></p>
+			<p class="list-sub-title" ng-bind="sub"></p>
+			<p class="list-desc" ng-bind="desc"></p>
+		</div>
+		<div class="col-xs-2">
+			<p>2h</p>
+			<img ng-src="{{image}}" style="width: 20px;height: 20px;">
+		</div>
+	</div>
+</section>
