@@ -21,6 +21,15 @@ var app = angular.module('myApp', ['ui.router'])
             templateUrl:"view/record.html",
             controller: "recordCtrl"
         })
+        .state('tab-car', {
+            url: "/tab-car",
+            templateUrl: "view/tab-car.html"
+        })
+        .state('tab-car.home', {
+            url: "/home",
+            templateUrl: "view/cardetail.html",
+            controller: "carDetailCtrl"
+        })
         .state('login',{
             //未建置完
             url: "/login",
