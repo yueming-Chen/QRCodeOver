@@ -35,6 +35,11 @@ var app = angular.module('myApp', ['ui.router'])
             url: "/login",
             templateUrl:"view/login.html",
             controller: "loginCtrl"
+        })
+        .state('regist',{
+            url:"/regist",
+            templateUrl:"view/regist.html",
+            controller:"registCtrl"
         });
 
         

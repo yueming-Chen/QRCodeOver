@@ -1,6 +1,10 @@
 # QRCodeOver
 ##使用說明
 1.安裝node.js
+[node.js官網](https://nodejs.org/en/)
+* 進入網站後找到Download
+* 如果是windows就選擇該系統，linux及MacOS則選擇該系統
+* 下載完成後，雙擊安裝
 
 2.安裝完畢後，輸入下列指令
 
