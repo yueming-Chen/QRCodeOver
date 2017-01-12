@@ -5,7 +5,8 @@
 }
 
 html, body {
-	margin:0;padding:0;height:100%;
+    min-height: 100% !important;
+	margin:0;padding:0;height:100%;width: 100%;
 	/*background: #D1CFBA;*/
     background: #63768D;
 }
@@ -183,6 +184,7 @@ html, body {
 
 .section{
     padding: 0;
+    height: 100%;
 }
 
 .section .display {
@@ -288,7 +290,10 @@ html, body {
 }
 
 .section .show-reserve{
-    background: #B8F3FF;
+    background: url("../img/reserve.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section .show-reserve .reserve-div{
@@ -327,7 +332,7 @@ html, body {
 .vertical_home {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
-    color: #000;
+    color: rgba(255,255,255,0.6);
     font-size: 17px;
     position: fixed;
     top: 55%;
@@ -416,6 +421,87 @@ html, body {
     transition: all .9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+/*reservation*/
+
+.showReservation{
+    
+    background: url("http://www.anhuiyubo.com/a/img/6/5/e/b/3/4/13638.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97%;
+    padding: 10px 50px 10px 50px;
+    margin: 10px;
+}
+.showReservation .reservationTitle{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.showReservation .horizonDivider{
+    border-radius: 2px;
+    width: 2px;
+    height: 112.4px;
+    background: rgba(255,255,255,0.8);
+}
+
+.showReservation .reservationForm{
+
+    margin: 10px;
+    margin-top: 26px;
+    margin-bottom: 80px;
+    padding: 5px;   
+}
+
+.showReservation .shortUnderScore{
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 2px;
+    width: 24px;
+    background: rgba(255,255,255,0.9);
+}
+
+.showReservation .introduceTitle{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 25px;
+    /*font-weight: bold;*/
+
+}
+
+.showReservation .reservationInput{
+    padding: 6px;
+    border-radius: 2px;
+    transition: ease-out .8s;
+    border: 2px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.2);
+    color: black;
+
+}
+
+.showReservation .btnDefault{
+    margin-top: 40px;
+    font-size: 32px;
+    border-radius: 0px;
+    border: 2px solid rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.3);
+    color: white;
+    transition: all ease-out .8s;
+}
+
+.showReservation .btnDefault:hover{
+    color: black;
+    background: rgba(255,255,255,0.5);
+}
 
 
 

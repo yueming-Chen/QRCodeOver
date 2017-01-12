@@ -1,5 +1,5 @@
 
-app.controller('registCtrl', function($scope) {
+app.controller('registCtrl', function($scope,$state) {
 	//寫入Localstorage
 $(document).ready(function(){
 		$('.ham').click(function(){
@@ -26,5 +26,18 @@ $(document).ready(function(){
 
 	function scroll(){
 		
-	}
+	};
+
+	$scope.reserve = function(){
+		$state.go('reserve');
+	};
+
+	$(document).ready(function(){
+
+	});
+
+	$('body').scroll(function(){
+		console.log($(window).height());
+	});
+
 });

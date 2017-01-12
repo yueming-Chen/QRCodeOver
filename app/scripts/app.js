@@ -40,6 +40,11 @@ var app = angular.module('myApp', ['ui.router'])
             url:"/regist",
             templateUrl:"view/regist.html",
             controller:"registCtrl"
+        })
+        .state('reserve',{
+            url:"/reserve",
+            templateUrl:"view/reserve.html",
+            controller:"reserveCtrl"
         });
 
         

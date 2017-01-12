@@ -1,0 +1,42 @@
+<section class="col-md-12 section">
+	<!-- apleplci -->
+	
+	<div class="vertical_home vertical_home_left opening">
+	S<br>M<br>A<br>R<br>T
+	</div>
+	<div class="vertical_home vertical_home_right opening">
+		I<br>T<br><p class="bigX">X</p><br>I<br>L
+	</div>
+	<article class="showReservation">
+		<h1 class="reservationTitle">INTELLEGENT TAG</h1>
+		<form>
+			<div class="col-md-offset-6 horizonDivider"></div>
+		</form>
+		<form class="reservationForm">
+			
+			<span class="col-md-12 introduceTitle">
+				<div class=" shortUnderScore"></div>姓名
+			</span>
+			<input class="col-md-12 reservationInput" type="text" name="name" id="name">
+		</form>
+		<form class="reservationForm">
+			<span class="col-md-12 introduceTitle">
+				<div class=" shortUnderScore"></div>電子信箱
+			</span>
+			<input class="col-md-12 reservationInput" type="email" name="name" id="email">
+		</form>
+		<form class="reservationForm">
+			<span class="col-md-12 introduceTitle">
+				<div class=" shortUnderScore"></div>你想要加入哪些種類的機器人為好友呢?
+			</span>
+			<select class="form-control reservationInput" id="choose">
+				<option ng-repeat="option in options">{{option}}</option>
+			</select>
+			<!-- <input class="col-md-12 reservationInput" type="text" name="name" placeholder="i.e. 電視、冰箱...etc"> -->
+		</form>
+
+		<form>
+			<button class="col-md-offset-5 col-md-2 btn btnDefault" ng-click="submit()">提交</button>
+		</form>
+	</article>
+</section>
