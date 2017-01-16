@@ -1,5 +1,8 @@
 app.controller('reserveCtrl', function($scope,$state,api) {
+	
 	$scope.options = ["電視","冰箱","電腦","洗衣機","微波爐","掃地機器人吸塵器","冷氣","暖氣機","其他"];
+	const optionsCount = 9;
+
 	//寫入Localstorage
 	$(document).ready(function(){
 		$('.ham').click(function(){
@@ -7,6 +10,7 @@ app.controller('reserveCtrl', function($scope,$state,api) {
 			$(this).toggleClass('open');
 		});
 	});
+
 	function scrollNav() {
 	  $('.nav a').click(function(){  
 	    $('html, body').stop().animate({
@@ -15,7 +19,8 @@ app.controller('reserveCtrl', function($scope,$state,api) {
 	    return false;
 	  });
 	  $('.scrollTop a').scrollTop();
-	}
+	};
+
 	scrollNav();
 	$('.c_button a').click(function(){  
 	    $('html, body').stop().animate({
@@ -26,16 +31,28 @@ app.controller('reserveCtrl', function($scope,$state,api) {
 
 	function scroll(){
 		
-	}
+	};
+
+	$scope.checkCheck = function(){
+		let temp = [];
+		for(let count = 0; count < optionsCount;count++){
+			let reservationOption = $("#reservationOption" + count).prop("checked");
+			if(reservationOption) temp.push(count);
+		}
+		
+		return temp;
+	};
 
 	$scope.submit = function(){
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var choose = $("#choose").val();
-		var subject = name + " 預約資訊";
-		var content = {name:name,email:email,choose:choose};
+		let name = $("#name").val();
+		let email = $("#email").val();
+		let choose = $("#choose").val();
+		let advice = $("#advice").val();
+		let subject = name + " 預約資訊";
+		let chooseOption = $scope.checkCheck();
+		let content = {name:name,email:email,choose:choose,chooseOption:chooseOption,advice:advice};
 		content = JSON.stringify(content);
-		console.log(subject);
+		console.log(optionsCount);
 		api.sendmail(subject,content,function(d){
 			console.log(d);
 			$state.go("regist");

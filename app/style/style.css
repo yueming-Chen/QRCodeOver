@@ -444,7 +444,7 @@ html, body {
     background: url("http://www.anhuiyubo.com/a/img/6/5/e/b/3/4/13638.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 97%;
+    height: 120%;
     padding: 10px 50px 10px 50px;
     margin: 10px;
 }
@@ -534,6 +534,37 @@ html, body {
 .showReservation .btnDefault:hover{
     color: black;
     background: rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 668px) {
+    .showReservation .reservationTitle{
+        font-size: 40px;
+    }
+
+    .horizonDivider{
+        display: none;
+    }
+
+    .showReservation{
+        z-index: 100;
+        height: auto;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+
+    .section .display .nav{
+        font-size: 20px;
+
+    }
+
+    .section .show-reserve .figOne{
+    display: none;
+}
+
+.section .show-reserve .figTwo{
+    display: none;  
+}
+
 }
 
 

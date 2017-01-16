@@ -32,12 +32,12 @@
 			</span>
 			
 			<label ng-repeat="option in options" class="checkbox-inline reservationLabel">
-		      <input type="checkbox" class="reservationInput" value="">{{option}}
+		      <input type="checkbox" class="reservationInput" id="reservationOption{{$index}}" value="{{option}}">{{option}}
 		    </label>
 		</form>
 		<form class="reservationForm">
 			<span class="col-md-12 introduceTitle">
-				<div class=" shortUnderScore"></div>對我們說的話
+				<div class=" shortUnderScore"></div>對我們說的話或者希望能加入其他機器人
 			</span>
 			<input class="col-md-12 reservationInput" type="tesxt" name="name" id="advice">
 		</form>
