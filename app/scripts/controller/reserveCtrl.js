@@ -1,5 +1,5 @@
 app.controller('reserveCtrl', function($scope,$state,api) {
-	$scope.options = ["電視","冰箱","電腦","洗衣機","微波爐","掃地機器人吸塵器","冷氣","暖氣機"];
+	$scope.options = ["電視","冰箱","電腦","洗衣機","微波爐","掃地機器人吸塵器","冷氣","暖氣機","其他"];
 	//寫入Localstorage
 	$(document).ready(function(){
 		$('.ham').click(function(){

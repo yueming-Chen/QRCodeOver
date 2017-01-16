@@ -25,14 +25,21 @@
 			</span>
 			<input class="col-md-12 reservationInput" type="email" name="name" id="email">
 		</form>
-		<form class="reservationForm">
+		<form class="reservationForm specForm">
+		<!-- 改成check list -->
 			<span class="col-md-12 introduceTitle">
 				<div class=" shortUnderScore"></div>你想要加入哪些種類的機器人為好友呢?
 			</span>
-			<select class="form-control reservationInput" id="choose">
-				<option ng-repeat="option in options">{{option}}</option>
-			</select>
-			<!-- <input class="col-md-12 reservationInput" type="text" name="name" placeholder="i.e. 電視、冰箱...etc"> -->
+			
+			<label ng-repeat="option in options" class="checkbox-inline reservationLabel">
+		      <input type="checkbox" class="reservationInput" value="">{{option}}
+		    </label>
+		</form>
+		<form class="reservationForm">
+			<span class="col-md-12 introduceTitle">
+				<div class=" shortUnderScore"></div>對我們說的話
+			</span>
+			<input class="col-md-12 reservationInput" type="tesxt" name="name" id="advice">
 		</form>
 
 		<form>
